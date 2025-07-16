@@ -72,11 +72,11 @@ def engineer_features(df):
         features[wallet_id] = {
             'wallet_age_days': wallet_age_days,
             'transaction_count': len(wallet_df),
-            'total_deposit_usd': round(deposits_usd, 3)
-            'total_borrowed_usd': round(borrows_usd, 3)
-            'total_repaid_usd': round(repays_usd, 3)
+            'total_deposit_usd': round(deposits_usd, 3),
+            'total_borrowed_usd': round(borrows_usd, 3),
+            'total_repaid_usd': round(repays_usd, 3),
             'liquidation_count': liquidation_count,
-            'health_ratio': round(health_ratio, 3)
+            'health_ratio': round(health_ratio, 3),
             'repayment_ratio': round(repayment_ratio, 3)
         }
         
@@ -119,7 +119,7 @@ def calculate_credit_scores(features_df):
     print("--> Credit scores calculated successfully.")
     return features_df.sort_values(by='credit_score', ascending=False)
 
-def generate_analysis_artifacts(scored_df, output_dir)
+def generate_analysis_artifacts(scored_df, output_dir):
     #Generates and saves analysis artifacts like score distribution plots and tables.
   
     print(f"\nGenerating analysis artifacts in '{output_dir}'...")

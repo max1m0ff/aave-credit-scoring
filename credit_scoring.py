@@ -72,12 +72,12 @@ def engineer_features(df):
         features[wallet_id] = {
             'wallet_age_days': wallet_age_days,
             'transaction_count': len(wallet_df),
-            'total_deposit_usd': deposits_usd,
-            'total_borrowed_usd': borrows_usd,
-            'total_repaid_usd': repays_usd,
+            'total_deposit_usd': round(deposits_usd, 3)
+            'total_borrowed_usd': round(borrows_usd, 3)
+            'total_repaid_usd': round(repays_usd, 3)
             'liquidation_count': liquidation_count,
-            'health_ratio': health_ratio,
-            'repayment_ratio': repayment_ratio,
+            'health_ratio': round(health_ratio, 3)
+            'repayment_ratio': round(repayment_ratio, 3)
         }
         
     features_df = pd.DataFrame.from_dict(features, orient='index')

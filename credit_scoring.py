@@ -72,7 +72,7 @@ def engineer_features(df):
         features[wallet_id] = {
             'wallet_age_days': wallet_age_days,
             'transaction_count': len(wallet_df),
-            'total_deposit_usd': round(deposits_usd, 3),
+            'total_deposited_usd': round(deposits_usd, 3),
             'total_borrowed_usd': round(borrows_usd, 3),
             'total_repaid_usd': round(repays_usd, 3),
             'liquidation_count': liquidation_count,
@@ -92,14 +92,14 @@ def calculate_credit_scores(features_df):
     weights = {
         'wallet_age_days': 0.10,
         'transaction_count': 0.05,
-        'total_deposit_usd': 0.15,
+        'total_deposited_usd': 0.15,
         'health_ratio': 0.30,
         'repayment_ratio': 0.25,
         'liquidation_count': -0.15
     }
 
     score_data = features_df.copy()
-    for col in ['total_deposit_usd']:
+    for col in ['total_deposited_usd']:
         score_data[col] = np.log1p(score_data[col])
         
     score_data['health_ratio'] = np.log1p(score_data['health_ratio'])

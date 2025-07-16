@@ -1,1 +1,87 @@
-
+{
+  "_comment": "Below is the format for raw transactions data."
+}
+[{
+  "_id": {
+    "$oid": "681d38fed63812d4655f571a"
+  },
+  "userWallet": "0x00000000001accfa9cef68cf5371a23025b6d4b6",
+  "network": "polygon",
+  "protocol": "aave_v2",
+  "txHash": "0x695c69acf608fbf5d38e48ca5535e118cc213a89e3d6d2e66e6b0e3b2e8d4190",
+  "logId": "0x695c69acf608fbf5d38e48ca5535e118cc213a89e3d6d2e66e6b0e3b2e8d4190_Deposit",
+  "timestamp": 1629178166,
+  "blockNumber": 1629178166,
+  "action": "deposit",
+  "actionData": {
+    "type": "Deposit",
+    "amount": "2000000000",
+    "assetSymbol": "USDC",
+    "assetPriceUSD": "0.9938318274296357543568636362026045",
+    "poolId": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+    "userId": "0x00000000001accfa9cef68cf5371a23025b6d4b6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-05-08T23:06:39.465Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-08T23:06:39.465Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "681aa70dd6df53021cc6f3c0"
+  },
+  "userWallet": "0x000000000051d07a4fb3bd10121a343d85818da6",
+  "network": "polygon",
+  "protocol": "aave_v2",
+  "txHash": "0xe6fc162c86b2928b0ba9b82bda672763665152b9de9d92b0e1512a81b1129e3f",
+  "logId": "0xe6fc162c86b2928b0ba9b82bda672763665152b9de9d92b0e1512a81b1129e3f_Deposit",
+  "timestamp": 1621525013,
+  "blockNumber": 1621525013,
+  "action": "deposit",
+  "actionData": {
+    "type": "Deposit",
+    "amount": "145000000000000000000",
+    "assetSymbol": "WMATIC",
+    "assetPriceUSD": "1.970306761113742502077627085754506",
+    "poolId": "0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270",
+    "userId": "0x000000000051d07a4fb3bd10121a343d85818da6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-05-07T00:19:26.159Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-07T00:19:26.159Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "681d04c2d63812d4654c733e"
+  },
+  "userWallet": "0x000000000096026fb41fc39f9875d164bd82e2dc",
+  "network": "polygon",
+  "protocol": "aave_v2",
+  "txHash": "0xe2d7eb815c89331a734ed6f204a06c385a1b39040baadf59c3b29099fb138132",
+  "logId": "0xe2d7eb815c89331a734ed6f204a06c385a1b39040baadf59c3b29099fb138132_Deposit",
+  "timestamp": 1627118913,
+  "blockNumber": 1627118913,
+  "action": "deposit",
+  "actionData": {
+    "type": "Deposit",
+    "amount": "1000000000000000",
+    "assetSymbol": "WMATIC",
+    "assetPriceUSD": "0.9223772540040778087468127454060907",
+    "poolId": "0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270",
+    "userId": "0x000000000096026fb41fc39f9875d164bd82e2dc"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-05-08T19:23:47.877Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-08T19:23:47.877Z"
+  }
+}]
